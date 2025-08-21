@@ -1,0 +1,510 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Header Section -->
+<section class="chapters-header">
+  <div class="header-content">
+    <h1 class="header-title">{{ t.get('all_chapters', 'All Chapters') }}</h1>
+    <p class="header-subtitle">{{ t.get('chapters_intro', 'Explore all biology topics') }}</p>
+    <a href="{{ url_for('index', lang=lang) }}" class="back-btn">
+      <i class="fas fa-arrow-left"></i>
+      {{ t.get('back_home', 'Back to Home') }}
+    </a>
+  </div>
+</section>
+
+<!-- Chapters Grid -->
+<section class="chapters-grid-section">
+  <div class="container">
+    <div class="chapters-grid">
+      
+      <!-- Chapter 1: Histology -->
+      <div class="chapter-card">
+        <div class="chapter-icon">🔬</div>
+        <div class="chapter-content">
+          <h3 class="chapter-title">
+            <span class="chapter-number">{{ t.get('chapter', 'Chapter') }} 1</span>
+            {{ t.get('ch1_title', 'Histology') }}
+          </h3>
+          <p class="chapter-description">{{ t.get('c1', 'Study of tissues and cellular structures') }}</p>
+          <div class="chapter-actions">
+            <a href="{{ url_for('chapter', lang=lang, chapter_id=1) }}" class="action-btn primary-btn">
+              <i class="fas fa-play"></i>
+              {{ t.get('view_chapter', 'View Chapter') }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chapter 2: Embryology -->
+      <div class="chapter-card">
+        <div class="chapter-icon">🧬</div>
+        <div class="chapter-content">
+          <h3 class="chapter-title">
+            <span class="chapter-number">{{ t.get('chapter', 'Chapter') }} 2</span>
+            {{ t.get('ch2_title', 'Embryology') }}
+          </h3>
+          <p class="chapter-description">{{ t.get('c2', 'Development and formation processes') }}</p>
+          <div class="chapter-actions">
+            <a href="{{ url_for('chapter', lang=lang, chapter_id=2) }}" class="action-btn primary-btn">
+              <i class="fas fa-play"></i>
+              {{ t.get('view_chapter', 'View Chapter') }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chapter 3: Plant Anatomy -->
+      <div class="chapter-card">
+        <div class="chapter-icon">🌱</div>
+        <div class="chapter-content">
+          <h3 class="chapter-title">
+            <span class="chapter-number">{{ t.get('chapter', 'Chapter') }} 3</span>
+            {{ t.get('ch3_title', 'Plant Anatomy') }}
+          </h3>
+          <p class="chapter-description">{{ t.get('c3', 'Plant structure and physiology') }}</p>
+          <div class="chapter-actions">
+            <a href="{{ url_for('chapter', lang=lang, chapter_id=3) }}" class="action-btn primary-btn">
+              <i class="fas fa-play"></i>
+              {{ t.get('view_chapter', 'View Chapter') }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chapter 4: Parasitology -->
+      <div class="chapter-card">
+        <div class="chapter-icon">🦠</div>
+        <div class="chapter-content">
+          <h3 class="chapter-title">
+            <span class="chapter-number">{{ t.get('chapter', 'Chapter') }} 4</span>
+            {{ t.get('ch4_title', 'Parasitology') }}
+          </h3>
+          <p class="chapter-description">{{ t.get('c4', 'Study of parasites and host interactions') }}</p>
+          <div class="chapter-actions">
+            <a href="{{ url_for('chapter', lang=lang, chapter_id=4) }}" class="action-btn primary-btn">
+              <i class="fas fa-play"></i>
+              {{ t.get('view_chapter', 'View Chapter') }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chapter 5: Hematology -->
+      <div class="chapter-card">
+        <div class="chapter-icon">🩸</div>
+        <div class="chapter-content">
+          <h3 class="chapter-title">
+            <span class="chapter-number">{{ t.get('chapter', 'Chapter') }} 5</span>
+            {{ t.get('ch5_title', 'Hematology') }}
+          </h3>
+          <p class="chapter-description">{{ t.get('c5', 'Study of blood and blood disorders') }}</p>
+          <div class="chapter-actions">
+            <a href="{{ url_for('chapter', lang=lang, chapter_id=5) }}" class="action-btn primary-btn">
+              <i class="fas fa-play"></i>
+              {{ t.get('view_chapter', 'View Chapter') }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chapter 6: Microbiology -->
+      <div class="chapter-card">
+        <div class="chapter-icon">🔬</div>
+        <div class="chapter-content">
+          <h3 class="chapter-title">
+            <span class="chapter-number">{{ t.get('chapter', 'Chapter') }} 6</span>
+            {{ t.get('ch6_title', 'Microbiology') }}
+          </h3>
+          <p class="chapter-description">{{ t.get('c6', 'Study of microorganisms and microbes') }}</p>
+          <div class="chapter-actions">
+            <a href="{{ url_for('chapter', lang=lang, chapter_id=6) }}" class="action-btn primary-btn">
+              <i class="fas fa-play"></i>
+              {{ t.get('view_chapter', 'View Chapter') }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chapter 7: Entomology -->
+      <div class="chapter-card">
+        <div class="chapter-icon">🐛</div>
+        <div class="chapter-content">
+          <h3 class="chapter-title">
+            <span class="chapter-number">{{ t.get('chapter', 'Chapter') }} 7</span>
+            {{ t.get('ch7_title', 'Entomology') }}
+          </h3>
+          <p class="chapter-description">{{ t.get('c7', 'Study of insects and arthropods') }}</p>
+          <div class="chapter-actions">
+            <a href="{{ url_for('chapter', lang=lang, chapter_id=7) }}" class="action-btn primary-btn">
+              <i class="fas fa-play"></i>
+              {{ t.get('view_chapter', 'View Chapter') }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chapter 8: Algae -->
+      <div class="chapter-card">
+        <div class="chapter-icon">🌿</div>
+        <div class="chapter-content">
+          <h3 class="chapter-title">
+            <span class="chapter-number">{{ t.get('chapter', 'Chapter') }} 8</span>
+            {{ t.get('ch8_title', 'Algae') }}
+          </h3>
+          <p class="chapter-description">{{ t.get('c8', 'Study of algae and aquatic plants') }}</p>
+          <div class="chapter-actions">
+            <a href="{{ url_for('chapter', lang=lang, chapter_id=8) }}" class="action-btn primary-btn">
+              <i class="fas fa-play"></i>
+              {{ t.get('view_chapter', 'View Chapter') }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Bottom Navigation -->
+<section class="bottom-navigation">
+  <div class="container">
+    <div class="nav-actions">
+      <a href="{{ url_for('index', lang=lang) }}" class="nav-btn secondary-btn">
+        <i class="fas fa-home"></i>
+        {{ t.get('nav_home', 'Home') }}
+      </a>
+      <a href="{{ url_for('guide', lang=lang) }}" class="nav-btn primary-btn">
+        <i class="fas fa-book-open"></i>
+        {{ t.get('nav_guide', 'Full Guide') }}
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header Section */
+.chapters-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.chapters-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='20' cy='20' r='1'/%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.header-content {
+  position: relative;
+  z-index: 10;
+}
+
+.header-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #ffffff, #f0f8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Chapters Grid */
+.chapters-grid-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 60vh;
+}
+
+.chapters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.chapter-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.chapter-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.chapter-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.chapter-icon {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.chapter-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chapter-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.chapter-number {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #667eea;
+  margin-bottom: 0.25rem;
+}
+
+.chapter-description {
+  color: #718096;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  flex: 1;
+}
+
+.chapter-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  flex: 1;
+  justify-content: center;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.secondary-btn {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(240, 147, 251, 0.3);
+}
+
+.secondary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(240, 147, 251, 0.4);
+}
+
+/* Bottom Navigation */
+.bottom-navigation {
+  background: white;
+  padding: 3rem 0;
+  border-top: 1px solid #e2e8f0;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 2rem;
+  }
+  
+  .chapters-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .chapter-card {
+    padding: 1.5rem;
+  }
+  
+  .nav-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .nav-btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .chapter-icon {
+    font-size: 2.5rem;
+  }
+  
+  .chapter-title {
+    font-size: 1.2rem;
+  }
+  
+  .action-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .chapter-card {
+    border: 2px solid #333;
+  }
+  
+  .action-btn {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Focus styles for keyboard navigation */
+.action-btn:focus,
+.nav-btn:focus,
+.back-btn:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('📚 Chapters page loaded');
+  
+  // Add click handlers for all buttons
+  const buttons = document.querySelectorAll('.action-btn, .nav-btn, .back-btn');
+  console.log(`Found ${buttons.length} clickable elements`);
+  
+  buttons.forEach((btn, index) => {
+    btn.addEventListener('click', function(e) {
+      console.log(`Button ${index + 1} clicked:`, btn.href);
+      
+      // Visual feedback
+      btn.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        btn.style.transform = '';
+      }, 150);
+    });
+  });
+  
+  // Keyboard navigation
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      const focused = document.activeElement;
+      if (focused && (focused.classList.contains('action-btn') || focused.classList.contains('nav-btn'))) {
+        e.preventDefault();
+        focused.click();
+      }
+    }
+  });
+  
+  console.log('✅ Chapters page initialized');
+});
+</script>
+{% endblock %}
